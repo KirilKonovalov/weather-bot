@@ -1,0 +1,11 @@
+name: Daily informator
+
+on:
+  push:
+
+jobs:
+    Daily-Run:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout Code
+          uses: actions/checkout@v4
