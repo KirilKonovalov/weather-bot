@@ -1,8 +1,9 @@
 name: Daily informator
 
 on:
-  schedule:
-    - cron: '* * * * *'
+  workflow_dispatch:
+  # schedule:
+  #   - cron: '* * * * *'
 
 env:
   TELEGRAM_TOKEN: ${{secrets.TELEGRAM_TOKEN}}
