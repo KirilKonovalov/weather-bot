@@ -2,7 +2,7 @@ name: Daily informator
 
 on:
   schedule:
-  - cron: '* * * * *'
+    - cron: "*/2 * * * *"
 
 env:
   TELEGRAM_TOKEN: ${{secrets.TELEGRAM_TOKEN}}
