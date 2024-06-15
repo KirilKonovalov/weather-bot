@@ -46,11 +46,11 @@ def get_weather():
     
 def send_message(message):
     
-    # TELEGRAM_BOT_TOKEN = os.getenv('TELEGRAM_TOKEN')
-    # TELEGRAM_CHANNEL_ID = os.getenv('TELEGRAM_CHANNEL_ID')
+    TELEGRAM_BOT_TOKEN = os.getenv('TELEGRAM_TOKEN')
+    TELEGRAM_CHANNEL_ID = os.getenv('TELEGRAM_CHANNEL_ID')
     
-    TELEGRAM_BOT_TOKEN = '7183169130:AAFRwwQc5wjP5750nfpaD4thR0nBYScTBAw'
-    TELEGRAM_CHANNEL_ID = '-1002240857940'
+    # TELEGRAM_BOT_TOKEN = '7183169130:AAFRwwQc5wjP5750nfpaD4thR0nBYScTBAw'
+    # TELEGRAM_CHANNEL_ID = '-1002240857940'
 
     url = f'https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage'
 
