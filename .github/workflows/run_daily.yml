@@ -2,7 +2,7 @@ name: Daily informator
 
 on:
   schedule:
-    - cron: "*/2 * * * *"
+  - cron: '* * * * *'
 
 env:
   TELEGRAM_TOKEN: ${{secrets.TELEGRAM_TOKEN}}
@@ -16,5 +16,5 @@ jobs:
           uses: actions/checkout@v4
         - name: Install Dependencies
           run: pip install -r requirements.txt
-        - name: Run AppW
+        - name: Run App
           run: python app.py
